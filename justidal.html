@@ -1,0 +1,188 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Justdial</title>
+  
+</head>
+<body>
+  <header>
+    <div class="logo">Justdial</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="search-area">
+    <h1>Find Local Businesses Near You</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search for restaurants, salons, services..." />
+      <button onclick="search()">Search</button>
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2> Our Popular Categories</h2>
+    <div class="category-grid">
+      <div class="card">Restaurants</div>
+      <div class="card">Hospitals</div>
+      <div class="card">Hotels</div>
+      <div class="card">Plumbers</div>
+      <div class="card">Electricians</div>
+      <div class="card">Schools</div>
+      <div class="card">collage</div>
+      <div class="card">Loan</div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>2025NexTech| All rights reserved</p>
+  </footer>
+
+  
+</body>
+</html>
+
+
+<style>
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color:rgba(192, 192, 192, 0.188);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: ;
+  color: blue;
+  
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color:blue;
+  
+}
+
+.search-area {
+  padding: 60px 30px;
+  text-align: center;
+  background-color: #e0f0ff;
+}
+
+.search-area h1 {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 50%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: hsl(351, 100%, 28%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categories {
+  padding: 40px 30px;
+  text-align: center;
+  background-image: url(c.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.categories h2 {
+  margin-bottom: 30px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-style: outset;
+}
+
+.card:hover {
+  background-color: #d6eaff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #a30b0b;
+  color: white;
+}
+</style>
+
+
+
+
+<script>
+function search() {
+  const query = document.getElementById("searchInput").value;
+  if (query.trim() !== "") {
+    alert("Searching for: " + query);
+    // Here you can redirect or use real search API
+  } else {
+    alert("Please enter something to search!");
+  }
+}
+</script>
+
+
+
